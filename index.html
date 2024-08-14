@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Tip calculator app</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-</head>
-<body>
-  <div class="tip-calculator-app">
-    <div class="container">
-      <div class="header">
-        <h1 class="title">SPLI</h1>
-        <h1 class="title">TTER</h1>
-      </div>
-      <div class="card">
-        <div class="left-top">
-          <div class="bill">
-            <label for="bill" class="bill-label">Bill</label>
-            <input type="number" class="bill-input" id="bill">
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <div class="tip-calculator-app">
+      <div class="container">
+        <div class="header">
+          <h1 class="title">SPLI</h1>
+          <h1 class="title">TTER</h1>
+        </div>
+        <div class="card">
+          <div class="left-top">
+            <div class="bill">
+              <label for="bill" class="bill-label label">Bill</label>
+              <div class="input-container">
+                <img src="./images/icon-dollar.svg" alt="" class="bill-img" />
+                <input
+                  type="text"
+                  class="bill-input"
+                  id="bill"
+                  placeholder="0"
+                />
+              </div>
+            </div>
+            <div class="select-tip">
+              <label for="tip" class="tip-label label">Select Tip %</label>
+              <div class="tip">
+                <button class="tip-btn" id="tip-5">5%</button>
+                <button class="tip-btn" id="tip-10">10%</button>
+                <button class="tip-btn" id="tip-15">15%</button>
+                <button class="tip-btn" id="tip-25">25%</button>
+                <button class="tip-btn" id="tip-50">50%</button>
+                <input
+                  type="text"
+                  class="tip-input"
+                  id="custom-tip"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <div class="people">
+              <label for="people" class="people-label label"
+                >Number of People</label
+              >
+              <div class="input-container">
+                <img src="./images/icon-person.svg" alt="" class="people-img" />
+                <input
+                  type="text"
+                  class="people-input"
+                  id="people"
+                  placeholder="0"
+                />
+              </div>
+            </div>
           </div>
-          <div class="select-tip">
-            <label for="tip" class="tip-label">Select Tip %</label>
-            <div class="tip">
-              <button class="tip-btn" id="tip-5">5%</button>
-              <button class="tip-btn" id="tip-10">10%</button>
-              <button class="tip-btn" id="tip-15">15%</button>
-              <button class="tip-btn" id="tip-25">25%</button>
-              <button class="tip-btn" id="tip-50">50%</button>
-              <input type="number" class="tip-input" id="custom-tip" placeholder="Custom">
+          <div class="right-bottom">
+            <div class="right-bottom-card">
+              <div class="tip-amount">
+                <div class="tip-amount-title">
+                  Tip Amount <span>/ person</span>
+                </div>
+                <div class="tip-amount-amount">$0.00</div>
+              </div>
+              <div class="total">
+                <div class="total-title">Total <span>/ person</span></div>
+                <div class="total-amount">$0.00</div>
+              </div>
+              <button class="reset-btn">Reset</button>
             </div>
-        </div>
-        <div class="people">
-          <label for="people" class="people-label">Number of People</label>
-          <input type="number" class="people-input" id="people">
-        </div>
-        </div>
-        <div class="right-bottom">
-          <div class="right-bottom-card">
-            <div class="tip-amount">
-              <div class="tip-amount-title">Tip Amount <span>/ person</span></div>
-              <div class="tip-amount-amount">$0.00</div>
-            </div>
-            <div class="total">
-              <div class="total-title">Total <span>/ person</span></div>
-              <div class="total-amount">$0.00</div>
-            </div>
-            <button class="reset-btn">Reset</button>
           </div>
         </div>
       </div>
     </div>
-  </div> 
-</body>
+  </body>
 </html>

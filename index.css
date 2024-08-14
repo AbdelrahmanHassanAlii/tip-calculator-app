@@ -40,6 +40,12 @@ input {
   color: var(--very-dark-cyan);
 }
 
+button:hover {
+  cursor: pointer;
+  background-color: var(--strong-cyan) !important;
+  color: var(--very-dark-cyan) !important;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -58,9 +64,13 @@ input {
 
 .container .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: lighter;
   color: var(--very-dark-cyan);
   text-align: center;
+}
+
+.container .header {
+  margin: 50px;
 }
 
 .container .card {
@@ -72,7 +82,6 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: var(--border-radius);
-  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
@@ -183,6 +192,7 @@ input {
 
 .right-bottom {
   padding: 20px;
+  height: 100%;
 }
 
 @media screen and (max-width: 768px) {
@@ -193,6 +203,57 @@ input {
 
 .right-bottom .right-bottom-card {
   background-color: var(--very-dark-cyan);
-  padding: 10px;
+  padding: 30px 20px;
   border-radius: var(--border-radius-2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.right-bottom .right-bottom-card .bottom-of-result-card button {
+  width: 100%;
+  background-color: var(--dark-grayish-cyan);
+  color: var(--very-dark-cyan);
+  padding: 10px 0;
+  border: none;
+  border-radius: var(--border-radius-3);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.right-bottom .top-of-result-card .tip-amount,
+.right-bottom .top-of-result-card .total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-of-result-card {
+  color: var(--white);
+}
+
+.top-of-result-card .tip-amount {
+  margin-bottom: 30px;
+}
+
+.top-of-result-card .tip-amount-title,
+.top-of-result-card .total-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.top-of-result-card span {
+  font-size: 12px;
+  color: var(--dark-grayish-cyan);
+}
+
+.top-of-result-card .tip-amount-amount,
+.top-of-result-card .total-amount {
+  color: var(--strong-cyan);
+  font-size: 30px;
+  font-weight: 700;
 }

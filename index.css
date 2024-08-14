@@ -37,6 +37,7 @@ body {
 input {
   font-size: var(--font-size);
   font-weight: 700;
+  color: var(--very-dark-cyan);
 }
 
 .container {
@@ -78,6 +79,12 @@ input {
   .container .card {
     flex-direction: column;
   }
+}
+
+.left-top .card .select-label {
+  font-size: var(--font-size);
+  color: var(--very-dark-cyan);
+  font-weight: 700;
 }
 
 .left-top,
@@ -122,6 +129,12 @@ input {
   font-size: var(--font-size);
 }
 
+.left-top .label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--dark-grayish-cyan);
+}
+
 .left-top .select-tip .tip {
   display: flex;
   flex-direction: row;
@@ -152,12 +165,14 @@ input {
 .left-top .select-tip .tip .tip-input {
   display: inline-block;
   width: 30%;
-  height: 35px;
+  padding: 5px 10px;
+  height: 47px;
   text-align: center;
   outline: none;
   border: none;
   border-radius: var(--border-radius-3);
   background-color: var(--very-light-grayish-cyan);
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {

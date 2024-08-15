@@ -127,7 +127,12 @@ button:hover {
   background-color: var(--very-light-grayish-cyan);
   border-radius: var(--border-radius-3);
   padding: 5px 10px;
+  border: 2px solid transparent;
 }
+
+.input-container:has(input:focus) {
+    border-color: var(--strong-cyan); 
+  }
 
 .left-top .input-container input {
   width: 100%;
@@ -163,6 +168,11 @@ button:hover {
   width: 30%;
   font-size: var(--font-size);
   font-weight: 700;
+}
+
+.tip-btn.checked{
+  background-color: var(--strong-cyan) !important;
+  color: var(--very-dark-cyan) !important;
 }
 
 @media screen and (max-width: 768px) {

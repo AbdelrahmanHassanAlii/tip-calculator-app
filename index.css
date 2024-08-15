@@ -267,3 +267,16 @@ button:hover {
   font-size: 30px;
   font-weight: 700;
 }
+
+.for-error{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-message{
+  color: var(--error);
+  font-size: 10px;
+  display: none;
+}

@@ -37,7 +37,7 @@ body {
 input {
   font-size: var(--font-size);
   font-weight: 700;
-  color: var(--very-dark-cyan);
+  color: var(--very-dark-cyan) !important;
 }
 
 button:hover {
@@ -188,10 +188,14 @@ button:hover {
   height: 47px;
   text-align: center;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   border-radius: var(--border-radius-3);
   background-color: var(--very-light-grayish-cyan);
   font-size: 20px;
+}
+
+.tip-input:focus {
+  border-color: var(--strong-cyan) !important;
 }
 
 @media screen and (max-width: 768px) {

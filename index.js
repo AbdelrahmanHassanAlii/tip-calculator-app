@@ -18,6 +18,7 @@ tipBtns.forEach((btn) => {
     });
     e.target.classList.add("checked");
     tipValue = parseInt(e.target.innerHTML);
+    document.querySelector(".tip-input").value = "";
     checkInputs();
   });
 });
@@ -30,9 +31,14 @@ bill.addEventListener("input", (e) => {
 
 // Get people input value from user and convert it to number
 people.addEventListener("input", (e) => {
-  peopleValue = parseInt(e.target.value) || NaN;
-  checkInputs();
-});
+    peopleValue = parseInt(e.target.value) || NaN;
+    // if (peopleValue === 0) {
+    //   errorMessage.style.display = "block";
+    // } else {
+    //   errorMessage.style.display = "none";
+    // }
+    checkInputs();
+  });
 
 // Get tip input value from user and convert it to number
 tip.addEventListener("input", (e) => {

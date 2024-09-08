@@ -130,10 +130,6 @@ button:hover {
   border: 2px solid transparent;
 }
 
-.input-container:has(input:focus) {
-    border-color: var(--strong-cyan); 
-  }
-
 .left-top .input-container input {
   width: 100%;
   border: none;
@@ -170,7 +166,7 @@ button:hover {
   font-weight: 700;
 }
 
-.tip-btn.checked{
+.tip-btn.checked {
   background-color: var(--strong-cyan) !important;
   color: var(--very-dark-cyan) !important;
 }
@@ -272,15 +268,28 @@ button:hover {
   font-weight: 700;
 }
 
-.for-error{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.for-error {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.error-message{
+.error-message {
   color: var(--error);
   font-size: 10px;
   display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: var(--dark-grayish-cyan);
+}
+
+.attribution a {
+  color: var(--very-dark-cyan);
 }
